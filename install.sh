@@ -17,13 +17,15 @@ if (( $+commands[brew] )); then
 fi
 
 exec zsh -l
-brew bundle
-exec zsh -l
 
-## nextword
-if (( $+commands[go] )); then
-	open https://github.com/high-moctane/nextword-data/archive/large.tar.gz
-	go install github.com/high-moctane/nextword@latest
+if [[ -f Brewfile ]];then
+	brew bundle
+
+	## nextword
+	if (( $+commands[go] )); then
+		open https://github.com/high-moctane/nextword-data/archive/large.tar.gz
+		go install github.com/high-moctane/nextword@latest
+	fi
 fi
 # }}}
 
