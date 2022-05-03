@@ -20,21 +20,19 @@ brew "ripgrep"
 brew "sd"
 brew "tig"
 brew "zsh"
-cask "1password"
 cask "alfred"
-cask "appcleaner"
 cask "discord"
 cask "docker"
 cask "font-hackgen-nerd"
 cask "forklift"
 cask "google-chrome"
 cask "karabiner-elements"
-cask "the-unarchiver"
-cask "utm"
 cask "visual-studio-code"
 cask "vlc"
-cask "vmware-fusion"
 cask "wezterm"
+mas "1Password 7", id: 1333542190
 mas "Magnet", id: 441258766
+mas "Microsoft Remote Desktop", id: 1295203466
 mas "Tailscale", id: 1475387142
+mas "The Unarchiver", id: 425424353
 mas "Twitter", id: 1482454543

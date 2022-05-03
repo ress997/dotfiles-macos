@@ -5,13 +5,13 @@ sudo xcode-select --install
 
 # Rosetta2 インストール
 #if [[ $(uname -m) == arm64 && ! -f /Library/Apple/System/Library/LaunchDaemons/com.apple.oahd.plist ]];then
-sudo softwareupdate --install-rosetta --agree-to-license
+#	sudo softwareupdate --install-rosetta --agree-to-license
 #fi
 
 # dotfile setup
 
 # Homebrew {{{
-if (( $+commands[brew] )); then
+if (( $+commands[brew] -1 )); then
 	# Install Homebrew
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
@@ -20,13 +20,12 @@ exec zsh -l
 
 if [[ -f Brewfile ]];then
 	brew bundle
-
-	## nextword
-	if (( $+commands[go] )); then
-		open https://github.com/high-moctane/nextword-data/archive/large.tar.gz
-		go install github.com/high-moctane/nextword@latest
-	fi
 fi
+# }}}
+
+# mocword {{{
+open https://github.com/high-moctane/mocword/releases/download/v0.2.0/mocword-aarch64-apple-darwin
+open https://github.com/high-moctane/mocword-data/releases/download/eng20200217/mocword.sqlite.gz
 # }}}
 
 # ネットワークドライブで.DS_Store を作成しない
