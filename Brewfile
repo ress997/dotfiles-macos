@@ -19,8 +19,6 @@ brew "ripgrep"
 brew "sd"
 brew "tig"
 cask "1password"
-cask "alfred"
-cask "discord"
 cask "docker"
 cask "font-hackgen-nerd"
 cask "forklift"
@@ -32,7 +30,9 @@ cask "wezterm"
 mas "1Password for Safari", id: 1569813296
 mas "Apple Configurator", id: 1037126344
 mas "Magnet", id: 441258766
+mas "Microsoft Excel", id: 462058435
 mas "Microsoft Remote Desktop", id: 1295203466
+mas "Microsoft Word", id: 462054704
 mas "Tailscale", id: 1475387142
 mas "The Unarchiver", id: 425424353
 mas "Twitter", id: 1482454543
